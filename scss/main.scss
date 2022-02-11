@@ -1,0 +1,199 @@
+$primary-color: #07969E;
+$secondary-color: #2D2D2D;
+
+* {
+  // margin: 0;
+  // padding: 0;
+  // box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #fff;
+
+  #container {
+    #nav-showcase {
+      height: 100vh;
+
+      #nav-bar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 0px, 120px, 0px, 120px;
+  
+        .nav-links {
+          ul, li {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // align-items: flex-start;
+  
+            a {
+              color: $primary-color;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 19px;
+              margin: 0px 23px;
+            }
+          }
+        }
+      }
+
+      #showcase {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        .showcase-content {
+         margin-top: -5rem;
+    
+          h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: $primary-color;
+            font-size: 55px;
+            font-weight: 600;
+            line-height: 70px;
+            img {
+              margin-right: 1rem;
+              margin-left: -0.7rem;
+              margin-bottom: 1.2rem;
+            }
+            
+          };
+    
+          
+          p {
+            color: #4A5050;
+            font-weight: 500;
+            font-size: 16px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 25px;
+          }
+    
+          .download-app {
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-left: -6.7rem;
+    
+            .download {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              background: $secondary-color;
+              border-radius: 10px;
+              width: 150px;
+              height: 50px;
+              padding-right: 10px;
+              padding-left: 10px;
+              color: #fff;
+              margin-right: -80px;
+  
+              p {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 13px;
+                color: #fff;
+                // font-weight: 400;
+                line-height: 16px;
+                margin: 10px;
+  
+                span{
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  display: block;
+                  font-size: 12px;
+                  font-weight: 900;
+                  margin-left: -5px;
+                }
+              }
+  
+              
+            }
+  
+            .playstore-download {
+              margin-right: 35px;
+            }
+          }
+        }
+    
+        .phone {
+          margin-top: 2rem;
+    
+          img {
+            width: 260px;
+            height: 461px;
+            box-shadow: 1px 1px 10px $secondary-color;
+          }
+        }
+      }
+    }
+
+    #partners-invest {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .partners {
+        // margin: 2rem;
+        img {
+          width: 42rem;
+        }
+      }
+    
+      .invest {
+        margin-top: 0rem;
+
+        .invest-benefits {
+          margin-top: 1rem;
+          margin-left: 10rem;
+          margin-bottom: 1rem;
+          margin-right: 10rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            h2 {
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              color: $secondary-color;
+              font-size: 32px;
+              font-weight: 700;
+              margin-bottom: 10px;
+            }
+
+            p {
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              color: #4A5050;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+            }
+
+            a {
+              color: $primary-color;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 22px;
+
+              i {
+                display: none;
+              }
+
+              &:hover {
+                // animation: all ease-in-out 2s;
+                i {
+                  display: inline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}   
